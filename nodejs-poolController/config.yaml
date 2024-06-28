@@ -12,10 +12,12 @@ arch:
 host_network: true
 ports:
   4200/tcp: 4200
+  5150/tcp: 5150
 ports_description:
-  4200/tcp: Web interface
+  4200/tcp: Server Web Interface
+  5150/tcp: Dashboard Web Interface
 log:
   logfile: STDOUT
   errorfile: STDERR
 panel_icon: mdi:waves-arrow-up
-image: msmi/nodejs-poolcontroller
+image: tagyoureit/njspc-dp-combined-app
